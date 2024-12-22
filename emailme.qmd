@@ -1,0 +1,21 @@
+---
+---
+### Riempi questa scheda per contattarci
+
+```{=html}
+<form action="https://api.web3forms.com/submit" method="POST">
+    <input type="hidden" name="access_key" value="acf1cdde-47bc-4834-868a-f65c55366623">
+    <input type="hidden" name="subject" value="Email dal sito matteo.pedani.it">
+    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+    <h3> Nome e Cognome </h3>
+    <input type="text" name="name" required>
+    <h3> email</h3>
+    <input type="email" name="email" required>
+      <h3> telefono</h3>
+    <input type="phone" name="phone" required>
+    <h3> messaggio</h3>
+    <textarea name="message" required></textarea>
+    </br></br>
+    <button type="submit">invio</button>
+</form>
+```
