@@ -8,7 +8,7 @@
 
 <meta name="author" content="Matteo Pedani">
 
-<title>La luna – matteo blog</title>
+<title>La luna nel pozzo – matteo blog</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -181,7 +181,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">La luna</h1>
+      <h1 class="title">La luna nel pozzo</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">matematica</div>
               </div>
@@ -228,14 +228,16 @@ window.Quarto = {
 </div>
 <section id="la-matematica-si-insegna-male" class="level3">
 <h3 data-anchor-id="la-matematica-si-insegna-male">La matematica si insegna male!</h3>
-<p>La matematica si insegna nella maggior parte dei casi in maniera meccanica.</p>
-<p>Alle superiori ho fatto il perito agrario, e la matematica che mi è rimasta, era incentrata sulle applicazioni alla topografia, quindi seni, coseni per permettere di fare tringolazioni per fare divisoni terreni e rilevamenti. Altre cose imparate delle formule di matematica finaziaria, per l’interesse, semplice e composto. Ed il numero <span class="math inline">\(e\)</span> non era altro che un espediente per fare calcoli più velocemente.</p>
-<p>Ma alla fine delle superiori data la mia passione per le scienze, mi sono iscritto a fisica. Ma anche all’università, i professori esponevano sempre più velocemente le cose in maniera meccanica. Ed ioc non avevo una preparazione adeguata e capii che non riuscivo ad andare avanti. Mi dedicai al cinema vista che era la mia altra passione. Una passione che coltivavo da quando avevo 14 anni e stampavo le foto in camera oscura. Ho frequentato e diplomato il “Centro Sperimentale di Cinematografia” nella sezione di cinema documentario.</p>
-<p>Tutte queste parole per dire una sola cosa che inizio a comprendere solo adesso, non solo io ero e resto un grande ignorante in matematica. Ma sia il metodo di insegnamento alle superiori, sia all’università, sono aridi, cioè non fanno percepire la reale potenza della matematica. Ma mirano a creare delle persone che possono essere al più dei meri calcolatori. In un mondo dove le macchine sono più brave a fare i calcoli, non è più ammissibile! bisogna puntare all’opposto ad un mondo dove la matematica apre gli occhi ad orizzonti più ampi.</p>
+<section id="ed-io-lho-compresa-peggio" class="level4">
+<h4 data-anchor-id="ed-io-lho-compresa-peggio">(ed io l’ho compresa <strong><em>peggio)</em></strong></h4>
+<p>La matematica si insegna nella maggior parte dei casi in maniera meccanica. Alle superiori ho fatto il perito agrario, e la matematica che mi è rimasta, era incentrata sulle applicazioni alla topografia, quindi seni, coseni per permettere di fare triangolazioni per fare divisioni dei terreni e rilevamenti. Altre cose imparate delle formule di matematica finanziaria, per l’interesse, semplice e composto. Ed il numero <span class="math inline">\(e\)</span> non era altro che un espediente per fare calcoli più velocemente.</p>
+<p>Ma alla fine delle superiori data la mia passione per le scienze, mi sono iscritto a fisica. Ma anche all’università, i professori esponevano sempre più velocemente le cose in maniera meccanica. Ed io non avevo una preparazione adeguata e capii che non riuscivo ad andare avanti. Mi dedicai al cinema vista che era la mia altra passione. Una passione che coltivavo da quando avevo 14 anni e stampavo le foto in camera oscura. Ho frequentato e diplomato il “Centro Sperimentale di Cinematografia” nella sezione di cinema documentario.</p>
+<p>Tutte queste parole per dire una sola cosa che inizio a comprendere solo adesso, non solo io ero e resto un grande ignorante in matematica. Ma sia il metodo di insegnamento alle superiori, sia all’università, sono aridi. Non fanno percepire la reale potenza della matematica. Ma mirano a creare delle persone che possono essere al più dei meri calcolatori. In un mondo dove le macchine sono più brave a fare i calcoli, non è più ammissibile! Bisogna puntare all’opposto ad un mondo dove la matematica apre gli occhi ad orizzonti più ampi.</p>
+</section>
 </section>
 <section id="la-luna-nel-pozzo." class="level2">
 <h2 data-anchor-id="la-luna-nel-pozzo.">La luna nel pozzo.</h2>
-<p><strong><em>Siamo in un mondo che percepiamo a 5 dimensioni ma che potrebbe essere monodimensionale</em></strong> <strong><em>anzi a dimensioni infinite.</em></strong></p>
+<p><strong><em>Siamo in un mondo che percepiamo a 5 dimensioni ma che potrebbe essere monodimensionale</em></strong> <strong><em>anzi a dimensioni infinite?</em></strong></p>
 <p>Una sera dopo una giornata faticosa, sono uscito in giardino, ed ho visto la luna piena, e mi sono detto adesso gli faccio delle foto. Ho preso la macchinetta fotografica il cavalletto ed ho iniziato a scattare le foto. Naturalmente dopo pochi minuti la luna <em>scappava</em> dall’inquadratura per effetto della rotazione terrestre.</p>
 <p>Poi dopo un po’ mi sono chiesto: E se io potessi aumentare la risoluzione, interpolando una serie di foto del cielo mentre si muove? Così ho fotografato il cielo, facendo delle foto nel più breve tempo possibile dalla macchinetta fotografica.</p>
 <p>Quindi ho preso carta e matita ed ho disegnato uno schema del cielo l’obbiettivo della macchina fotografica ed il sensore, cercando di visualizzare la relazione tra di loro.</p>
@@ -364,23 +366,19 @@ window.Quarto = {
 </tr>
 </tbody>
 </table>
-<p>ma poi ho detto, facciamo le cose più semplici facciamo una riga per volta. E poi mi sono detto “facciamo finta che” io so quale è il valore del cielo a più alta risoluzione. Il valore del cielo che leggo con il sensore non è altro che lo somma in un dato intorno. Ed ipotizziamo che il cielo non cambi tra uno scatto e l’altro. Allora ho scritto due sequenze di numeri. La prima lista era la lista del valore di luminosità delle stelle ad alta risoluzione, ipotizzando che tra una foto e l’altra il cielo si sposti di un <span class="math inline">\(1/k\)</span> di pixel, ne ho fatto la somma ogni <span class="math inline">\(k\)</span>, e visto che la macchina foto grafica non mi avrebbe dato valori infiniti ma numeri interi con un valore massimo finito. Ho limitato i miei numeri da 0 fino a 9. Bene! Ho preso carta e matita e mi sono messo a fare i conti.</p>
+<p>Poi ho detto, facciamo le cose più semplici facciamo una riga per volta. E poi mi sono detto “facciamo finta che” io so quale è il valore del cielo a più alta risoluzione. Il valore del cielo che leggo con il sensore non è altro che lo somma in un dato intorno. Ed ipotizziamo che il cielo non cambi tra uno scatto e l’altro. Ho scritto due sequenze di numeri. La prima lista era la lista del valore di luminosità delle stelle ad alta risoluzione, ipotizzando che tra una foto e l’altra il cielo si sposti di un <span class="math inline">\(1/k\)</span> di pixel, ne ho fatto la somma ogni <span class="math inline">\(k\)</span>, e visto che la macchina foto grafica non mi avrebbe dato valori infiniti ma numeri interi con un valore massimo finito. Ho limitato i miei numeri da 0 fino a 9. Bene! Ho preso carta e matita e mi sono messo a fare i conti.</p>
 <p><strong>Cielo A</strong></p>
-<p><span class="math inline">\((1,3,4,5,1,0,2,3,6,4,7,5,7,0,,,)\)</span></p>
+<p><span class="math inline">\((a_0,a_1,a_2,a_3,...,a_n)\)</span></p>
 <p><strong>Sensore B</strong></p>
-<p><span class="math inline">\((13,13,10,8,6,11,15,20,22,23,19,12,7,0)\)</span></p>
+<p><span class="math inline">\((b_0,b_1,b_2,b_3,...,b_n)\)</span></p>
 <p>In pratica ho due insiemi <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> dove ogni termine di <span class="math inline">\(B\)</span> è dato dalla somma dei <span class="math inline">\(k\)</span> termini di <span class="math inline">\(A\)</span> ad esempio con <span class="math inline">\(K=4\)</span></p>
 <p><span class="math display">\[
 b_n = a_{n-3} + a_{n-2} + a_{n-1} + a_{n-0}
 \]</span></p>
-<p>cioè per k generico ogni termine <span class="math inline">\(b_n\)</span></p>
-<p><span class="math display">\[
-b_n = a_{n-k-1} + a_{n-k-2} + a_{n-k-3} + ... + a_{n-k-k}
-\]</span></p>
 <p>Da come abbiamo definito <span class="math inline">\(A\)</span> e <span class="math inline">\(B\)</span> possiamo calcolare “quasi” ogni punto di <span class="math inline">\(B\)</span> è uguale alla sommatoria di <span class="math inline">\(k\)</span> punti precedenti ad <span class="math inline">\(A\)</span></p>
 <p>E qui mi sono fermato per parecchio tempo, in pratica non conoscevo neanche il modo per comunicare quello che immaginavo, non avevo parole per comunicarlo.</p>
 <p>Mi sono messo a studiare. Ma la vastità degli argomenti é tale che ogni volta ne ero affascinato.</p>
-<p>Facendo queste considerazioni abbiamo anche detto che ad ogni passo <span class="math inline">\(t\)</span> ci spostiamo di <span class="math inline">\(1\)</span></p>
+<p>Facendo queste considerazioni abbiamo anche detto che ad ogni passo <span class="math inline">\(k\)</span> ci spostiamo di <span class="math inline">\(1\)</span></p>
 <p>E guardando meglio ci accorgiamo che non è tanto importante tutta sommatoria ma il primo e l’ultimo termine della sommatoria. E che la sommatoria potrebbe essere fatta <span class="math inline">\(k = 1000\)</span> oppure <span class="math inline">\(k = 50\)</span> oppure <span class="math inline">\(k =3\)</span> e sarebbero importanti solo i termini <span class="math inline">\(a_k\)</span> e <span class="math inline">\(a_0\)</span></p>
 <p><span class="math display">\[ B = \int A\]</span> <span class="math display">\[A = \Delta B \]</span></p>
 <p>Ora</p>
@@ -392,7 +390,7 @@ b_n = a_{n-k-1} + a_{n-k-2} + a_{n-k-3} + ... + a_{n-k-k}
 <p>Iniziamo quindi definendo la sequenza iniziale <span class="math inline">\(a_1\)</span> come:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definizione della sequenza iniziale</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">9</span>,<span class="dv">2</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>z <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">31</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Numero di elementi nella sequenza iniziale</span></span>
 <span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>n <span class="ot">&lt;-</span> <span class="fu">length</span>(z)</span>
@@ -415,7 +413,7 @@ b_n = a_{n-k-1} + a_{n-k-2} + a_{n-k-3} + ... + a_{n-k-k}
 </div>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(z_new, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>2 4 8 16 32 64 126 248 488 960 </code></pre>
+<pre><code>0 0 0 0 0 0 0 0 0 0 5 7 0 0 0 0 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creazione del grafico della sequenza generata</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(z_new, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">xlab =</span> <span class="st">"n"</span>, <span class="at">ylab =</span> <span class="st">"z_n"</span>, <span class="at">main =</span> <span class="st">"Successione"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -435,7 +433,7 @@ b_n = a_{n-k-1} + a_{n-k-2} + a_{n-k-3} + ... + a_{n-k-k}
 <p>Possiamo scrivere il programma in questo modo:</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Definiamo la serie</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>serie <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">4</span>, <span class="dv">8</span>, <span class="dv">16</span>, <span class="dv">32</span>)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>serie <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="dv">1</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">1</span>,<span class="dv">0</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">4</span>,<span class="dv">7</span>,<span class="dv">5</span>,<span class="dv">7</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>,<span class="dv">0</span>)</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Inizializziamo il vettore delle derivate</span></span>
 <span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>derivate <span class="ot">&lt;-</span> <span class="fu">numeric</span>(<span class="fu">length</span>(serie)<span class="sc">-</span><span class="dv">1</span>)</span>
@@ -452,7 +450,7 @@ b_n = a_{n-k-1} + a_{n-k-2} + a_{n-k-3} + ... + a_{n-k-k}
 </div>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(derivate, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>2 4 8 16 </code></pre>
+<pre><code>2 1 1 -4 -1 2 1 3 -2 3 -2 2 -7 0 0 0 </code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creazione del grafico della sequenza generata</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(derivate, <span class="at">type =</span> <span class="st">"l"</span>, <span class="at">xlab =</span> <span class="st">"n"</span>, <span class="at">ylab =</span> <span class="st">"z_n"</span>, <span class="at">main =</span> <span class="st">"Successione"</span>)</span></code><button title="Copia negli appunti" class="code-copy-button"><i class="bi"></i></button></pre></div>
