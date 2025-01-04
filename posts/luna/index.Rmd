@@ -55,7 +55,7 @@ $(b_0,b_1,b_2,b_3,...,b_n)$
 In pratica ho due insiemi $A$ e $B$ dove ogni termine di $B$ è dato dalla somma dei $k$ termini di $A$ ad esempio con $K=4$
 
 $$
-b_n = a_{n-3} + a_{n-2} + a_{n-1} + a_{n-0}
+b_n = a_{n} + a_{n-1} + a_{n-2} + a_{n-3}
 $$
 
 Da come abbiamo definito $A$ e $B$ possiamo calcolare "quasi" ogni punto di $B$ è uguale alla sommatoria di $k$ punti precedenti ad $A$
@@ -68,47 +68,17 @@ Facendo queste considerazioni abbiamo anche detto che ad ogni passo $k$ ci spost
 
 E guardando meglio ci accorgiamo che non è tanto importante tutta sommatoria ma il primo e l'ultimo termine della sommatoria. E che la sommatoria potrebbe essere fatta $k = 1000$ oppure $k = 50$ oppure $k =3$ e sarebbero importanti solo i termini $a_k$ e $a_0$
 
-$$ B = \int A$$ $$A = \Delta B $$
+Cioè ogni elemento dell'insieme $B$ è dato dalla sommatoria in un intorno $k$ dell insieme $A$
 
-Ora
+Mi sono quindi messo a fare i conti a mano. Usando la formula che empiricamente avevo  ipotizzato (nella mia grande ignoranza del fatto che era già stata scoperta centinaia di anni prima)
 
-\
-$$z_{m+1} = (\sum_{i=0}^{m} z_i )- z_0 $$
+In pratica ogni punto $b_n$  di $B$ è  $$ b_n=\sum_{i=0}^{k-1} a_{n-i}
+$$ 
 
-Certamente! In questo caso, possiamo definire la sequenza in modo ricorsivo, dove il valore al tempo $t_i$ è dato dalla somma degli elementi della sequenza al tempo $t_{i-1}$ tranne il primo elemento. Possiamo rappresentare questa idea con la seguente equazione:
 
-$$a_{i} = \sum_{j=2}^{n} a_{i-1,j-1}$$
+$$ B = \int A$$ ed anche $$A =  f'(B) $$
 
-dove $a_{i,j}$ rappresenta l'$j$-esimo elemento della sequenza al tempo $t_i$.
 
-Iniziamo quindi definendo la sequenza iniziale $a_1$ come:
-
-```{r}
-# Definizione della sequenza iniziale
-z <- c(31,3,4,5,1,0,2,3,6,4,7,5,7,0,0,0,0)
-
-# Numero di elementi nella sequenza iniziale
-n <- length(z)
-
-# Numero di elementi da generare
-m <- 10
-
-# Creazione di un nuovo vettore che esclude il primo elemento della sequenza originale
-z_new <- z[-1]
-
-# Generazione dei m elementi successivi utilizzando l'equazione fornita
-for (i in 1:m) {
-  z_new[i] <- sum(z_new[(i-1):max(i-n,0)]) + z[n]
-}
-
-# Stampa della sequenza generata
-cat("Sequenza generata:\n")
-cat(z_new, "\n")
-
-# Creazione del grafico della sequenza generata
-plot(z_new, type = "l", xlab = "n", ylab = "z_n", main = "Successione")
-
-```
 
 Per calcolare la derivata numerica di una serie, possiamo utilizzare la formula di differenza finita:
 

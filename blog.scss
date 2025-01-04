@@ -1,0 +1,116 @@
+// Fonts
+
+@font-face {
+  font-family: "FrederickatheGreat";
+  font-style: bold;
+  font-weight: 700;
+  src: url(/fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Amstelvar-Roman";
+  src: url("/fonts/Amstelvar/Amstelvar-Roman[wdth,wght,opsz].ttf") format("truetype");
+  font-style: normal;
+  font-display: fallback;
+  font-weight: 300 900;
+  font-stretch: 75% 150%;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Amstelvar-Italic";
+  src: url("/fonts/Amstelvar/Amstelvar-Italic[wdth,wght,opsz].ttf") format("truetype");
+    /* format should be truetype-variations but it doesn't seem to be supported */
+    font-weight: normal;
+    font-style: italic;
+    font-display: fallback;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  src: url("/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+@font-face {
+  font-family: "NotoSans-Italic";
+  src: url("/fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+    font-display: fallback;
+}
+
+
+@font-face {
+  font-family: "FredokaOne";
+  src: url("/fonts/fredoka_one/FredokaOne.ttf") format("truetype");                         
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+
+// stylelint-disable-next-line value-keyword-case
+$font-family-sans-serif:  Noto-Sans, -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+
+$font-weight-base:            700 !default;
+$headings-font-family:       "Noto-Sans",   !default;
+
+/*-- scss:rules --*/
+h1 {
+  font-family: FrederickatheGreat, serif;
+  font-optical-sizing: auto;
+  font-size: 4rem;
+  font-stretch: 75%;
+  font-weight: 450;
+}
+
+
+h2 {
+  font-family: Amstelvar-Roman, serif;
+  font-optical-sizing: auto;
+  font-size: 3rem;
+  font-stretch: 90%;
+  font-weight: 575;
+}
+
+h3 {
+  font-family: "Noto-Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 2rem;
+  font-weight: 350;
+}
+
+h4 {
+  font-family: "Noto-Sans", Arial-bold, arial, sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-family: "Noto-Sans", Arial-bold, arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 350;
+  font-size: 1.4rem;
+}
+
+h6 {
+  font-family: "Noto-Sans", Arial-bold, arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 250;
+  font-size: 1.3rem;
+}
+
+
+body {
+  font:
+    1.1em "Amstelvar-Roman",
+    Georgia,
+    serif;
+  margin: 20px;
+  padding: 0;
+}

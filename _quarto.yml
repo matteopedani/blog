@@ -15,9 +15,9 @@ website:
         aria-label: Email
 format:
   html:
-    theme: united
+    theme: [united, brand,  blog.scss]
     css: styles.css
     toc: true
-editor: visual
+editor: source
 lang: it
-
+max-width: 1900px

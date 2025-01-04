@@ -1,1 +1,37 @@
 /* css styles */
+@font-face {
+  font-family: "DMSerifText";
+  src: url("/fonts/DM_Serif_Text/DMSerifText-Regular.ttf");
+}
+@font-face {
+  font-family: "DMSerifText-Italic";
+  src: url("/fonts/DM_Serif_Text/DMSerifText-Italic.ttf");
+}
+@font-face {
+  font-family: "FrederickatheGreat";
+  src: url("/fonts/Fredericka_the_Great/FrederickatheGreat-Regular.ttf");
+}
+
+/* noto  */
+@font-face {
+  font-family: "NotoSans-Italic";
+  src: url("/fonts/Noto_Sans/NotoSans-Italic-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "NotoSans";
+  src: url("/fonts/Noto_Sans/NotoSans-VariableFont_wdth,wght.ttf);
+}
+@font-face {
+  font-family: "NotoSerif-Italic";
+  src: url("/fonts/Noto_Serif/NotoSerif-Italic-VariableFont_wdth,wght.ttf");
+}
+@font-face {
+  font-family: "NotoSerif";
+  src: url("/fonts/Noto_Serif/NotoSerif-VariableFont_wdth,wght.ttf");
+}
+
+/* Amstelvar */
+@font-face {
+  font-family: "Amstelvar";
+  src: url("/fonts/Amstelvar/Amstelvar-Roman[wdth,wght,opsz].ttf");
+}
